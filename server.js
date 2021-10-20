@@ -15,8 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://sophiedeskin:Ags3225!@cluster0.aboxa.mongodb.net/budget?retryWrites=true&w=majority", {
-  // "mongodb://localhost/budget", {
+mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
